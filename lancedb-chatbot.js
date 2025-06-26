@@ -14,9 +14,9 @@ const { RecursiveCharacterTextSplitter } = require('langchain/text_splitter');
 // Configuration
 const MODEL = "gpt-4o-mini";
 const TABLE_NAME = "documents";
-const OPENAI_API_KEY = process.env.OPENAI_API_KEY || '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';
-const LANCEDB_URI = process.env.LANCEDB_URI || "db://default-8zm8d7"; // Replace with your URI
-const LANCEDB_API_KEY = process.env.LANCEDB_API_KEY || "sk_EBHPQIN2SJGVTJIPPPG2UTUDY7PSLBNNELNUKTEIFQ2J6TDDIYEA===="; // Replace with your API key
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
+const LANCEDB_URI = process.env.LANCEDB_URI; // Replace with your URI
+const LANCEDB_API_KEY = process.env.LANCEDB_API_KEY; // Replace with your API key
 
 class LanceDBRAGChatbot {
     constructor() {

@@ -1,10 +1,12 @@
 const { ChromaClient } = require("chromadb-client");
 const OpenAI = require("openai");
+const dotenv = require("dotenv");
+dotenv.config();
 
 // Initialize clients
 const chromaClient = new ChromaClient({ path: "http://localhost:8000" });
 const openai = new OpenAI({
-  apiKey: "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"
+  apiKey: process.env.OPENAI_API_KEY
 });
 
 class RAGSystem {

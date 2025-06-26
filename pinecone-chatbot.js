@@ -14,9 +14,9 @@ const { RecursiveCharacterTextSplitter } = require('langchain/text_splitter');
 // Configuration
 const MODEL = "gpt-4o";
 const INDEX_NAME = "rag-documents";
-const OPENAI_API_KEY = process.env.OPENAI_API_KEY || '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';
-const PINECONE_API_KEY = process.env.PINECONE_API_KEY || 'your-pinecone-api-key';
-const PINECONE_ENVIRONMENT = process.env.PINECONE_ENVIRONMENT || 'us-east-1-aws';
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY
+const PINECONE_API_KEY = process.env.PINECONE_API_KEY;
+const PINECONE_ENVIRONMENT = process.env.PINECONE_ENVIRONMENT;
 
 class PineconeRAGChatbot {
     constructor() {

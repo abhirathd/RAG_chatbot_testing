@@ -14,7 +14,7 @@ const { RecursiveCharacterTextSplitter } = require('langchain/text_splitter');
 // Configuration
 const MODEL = "gpt-4o-mini";
 const COLLECTION_NAME = "rag-documents";
-const OPENAI_API_KEY = process.env.OPENAI_API_KEY || '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';
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 const CHROMA_HOST = process.env.CHROMA_HOST || 'localhost';
 const CHROMA_PORT = process.env.CHROMA_PORT || '8000';
 const CHROMA_URL = `http://${CHROMA_HOST}:${CHROMA_PORT}`;

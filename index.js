@@ -15,7 +15,7 @@ const { MemoryVectorStore } = require('langchain/vectorstores/memory');
 // Configuration
 const MODEL = "gpt-4o-mini";
 const DB_NAME = "vector_db";
-const OPENAI_API_KEY = process.env.OPENAI_API_KEY || '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';
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
 class RAGChatbot {
     constructor() {
